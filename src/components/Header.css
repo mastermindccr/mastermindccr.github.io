@@ -1,0 +1,57 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically center items */
+  background-color: #282c34;
+  color: white;
+  height: 50px; /* fixed height for header */
+}
+
+/* Make the Link behave like inline-flex so it fits content */
+.nav-block {
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  height: 100%; /* ensure it fills the header height */
+}
+
+/* Remove padding from logo div to prevent extra height */
+.logo {
+  display: flex;
+  align-items: center; /* vertically center the logo */
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  align-items: stretch; /* make children stretch full height */
+  padding: 0rem 2rem;
+  height: 100%; /* ensure it fills the header height */
+}
+
+/* Nav item styling */
+.nav-item {
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  white-space: nowrap;
+  margin: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  /* Add transition for smooth animation */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}

@@ -1,0 +1,97 @@
+.main-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input-container {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.url-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+.format-select-div {
+    margin-bottom: 1rem;
+}
+
+.format-select-dropdown {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.download-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+/* Progress bar container */
+.progress-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Style the progress bar */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+/* Style the button when downloading */
+.download-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.preparing-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Simple spinner animation */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #ccc;
+  border-top: 3px solid #4caf50; /* Green or any accent color */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.preparing-text {
+  user-select: none;
+}
